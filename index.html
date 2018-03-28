@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>aaa</title>
+    <script>
+        (function(win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            resizeFn ();
+            window.onresize = function(){
+                resizeFn ();
+            };
+            function resizeFn (){
+                var width = docEl.getBoundingClientRect().width;
+                var rem = width / 10;
+                docEl.style.fontSize = rem + 'px';
+            }
+        })(window);
+    </script>
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="css/main.css" />
+
+  </head>
+  <body>
+  <div class="wrap">
+    <div id="loading"><img src="img/loading.png" alt=""></div>
+    <div id="music"><img src="img/music-0.png" alt=""></div>
+    <div id="main" style="opacity: 0;">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="page_01 page">
+              <div class="top ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+                aaaa
+              </div>
+              <div class="content">
+                <div class="main ani"  swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                  asdfdasfsafweewrf
+                </div>
+                <div class="p ani"   swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s">
+                  aaaaaaaaa
+                </div>
+              </div>
+              <img class="abs arrow_wl"  src="./img/arrow.png" alt="">
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/swiper-3.4.2.min.js"></script>
+  <script src="js/swiper.animate1.0.2.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
